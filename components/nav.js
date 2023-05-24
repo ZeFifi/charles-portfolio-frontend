@@ -14,7 +14,7 @@ const Nav = ({ categories }) => {
             {categories[0].attributes.articles?.data.map((data) => (
               <li key={data.id} className="font-light">
                 <Link href={`/article/${data.attributes.slug}`}>
-                  <a>{data.attributes.title}</a>
+                  {data.attributes.title}
                 </Link>
               </li>
             ))}
@@ -26,7 +26,7 @@ const Nav = ({ categories }) => {
             {categories[1].attributes.articles?.data.map((data) => (
               <li key={data.id} className="font-light">
                 <Link href={`/article/${data.attributes.slug}`}>
-                  <a>{data.attributes.title}</a>
+                  {data.attributes.title}
                 </Link>
               </li>
             ))}
@@ -36,7 +36,7 @@ const Nav = ({ categories }) => {
             {categories[2].attributes.articles?.data.map((data) => (
               <li key={data.id} className="font-light">
                 <Link href={`/article/${data.attributes.slug}`}>
-                  <a>{data.attributes.title}</a>
+                  {data.attributes.title}
                 </Link>
               </li>
             ))}
